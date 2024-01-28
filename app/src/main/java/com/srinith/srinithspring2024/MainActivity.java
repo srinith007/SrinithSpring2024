@@ -18,16 +18,13 @@ public class MainActivity extends AppCompatActivity {
         TextView helloTextView = findViewById(R.id.helloTextView);
         ImageView myImageView = findViewById(R.id.imageView);
         Button myButton = findViewById(R.id.myButton);
-
         myImageView.setVisibility(View.INVISIBLE);
 
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 helloTextView.setText("Welcome to Mobile Computing");
                 myImageView.setVisibility(View.VISIBLE);
-
                 Toast.makeText(MainActivity.this, "Loading Mobile Computing Course", Toast.LENGTH_SHORT).show();
             }
         });
